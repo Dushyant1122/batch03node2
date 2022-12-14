@@ -1,0 +1,22 @@
+body {
+  padding-top: 50px;
+}
+
+a {
+  color: #6ef03a;
+}
+
+.jumbotron{
+  background: url("https://picsum.photos/1280") no-repeat;
+
+  
+}
+
+footer{
+  background: #f4f4f4;
+  height: 40px;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  overflow: auto;
+}
