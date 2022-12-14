@@ -7,13 +7,14 @@ a {
 }
 
 .jumbotron{
-  background: url("https://picsum.photos/1280") no-repeat;
+  background: url("https://picsum.photos/1280");
 
   
 }
 
 footer{
-  background: #f4f4f4;
+  background: rgb(34,34,34);
+  color: white;
   height: 40px;
   text-align: center;
   margin-top: 30px;

@@ -9,22 +9,22 @@ router.get('/', function (req, res, next) {
 
 router.post('/send', function (req, res, next) {
     var transporter = nodemailer.createTransport({
-        service: 'Gmail',
+        service: 'gmail',
         auth: {
-            user: 'piyush1.chatur@gmail.com',
-            pass: 'test'
+            user: 'testmail1122@gmail.com',
+            pass: 'Test@26850'
         }
     });
 
-    var mainOptions = {
+    var mailOptions = {
         from: 'Ram <ram@gmail.com>',
-        to: 'piyush1.chatur@gmail.com',
+        to: 'testmail1122@gmail.com',
         subject: 'Website Submission',
         text: 'New Submission' + req.body.name + 'Email: ' + req.body.email + 'Message: ' + req.body.message,
         html: '<p>You got new submission.</p><ul><li>Name: '+req.body.name+'</li><li>Email: '+req.body.email+'</li><li>Message:'+req.body.message+'</li></ul>'
     }
     
-transporter.sendMail(mainOptions, function (error,info) {
+transporter.sendMail(mailOptions, function (error,info) {
     if (error) {
         console.log(error);
         res.redirect('/');
